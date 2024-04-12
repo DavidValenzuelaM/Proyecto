@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexion con el dominio de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--Google Fonts--> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet"> <!--Google fonst letras-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"/> <!--Font Awesome proporciona iconos.--> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet"/>  <!--Boostrap-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> <!--Carrusel--> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" class="img-fluid" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+        <div class="container-fluid gx-0">
+            <div class="swiper mySwiper carousel">                          <!--Carusel Boostrap-->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/carrusel1.png" alt="carrusel1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/carrusel2.png" alt="carrusel2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/carrusel3.png" alt="carrusel3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/carrusel4.png" alt="carrusel4">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-4 mb-4">
+                <h1 class="text-center">Destacados</h1>
+            </div>
+            <div class="row gx-0 gap-3 justify-content-center">                    <!--CARD-->
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/macetaVerde.jpg"
+                             class="card-img-top img-fluid"
+                             alt="maceta">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Maceta Verde Pequeña</h5>
+                        <p class="card-text">$1990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/tijerasParaCortarArbustos.png"
+                             class="card-img-top img-fluid"
+                             alt="tijeras">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Tijeras Unix</h5>
+                        <p class="card-text">$3990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/spray.png"
+                             class="card-img-top img-fluid"
+                             alt="spray">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Botella de spray</h5>
+                        <p class="card-text">$1990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/carretilla.png"
+                             class="card-img-top img-fluid"
+                             alt="carretilla">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Carretilla</h5>
+                        <p class="card-text">$3990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-4 mb-4">
+                <h1 class="text-center">Ofertas</h1>
+            </div>
+            <div class="row gx-0 gap-3 justify-content-center">
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/manguera.png"
+                             class="card-img-top img-fluid"
+                             alt="manguera">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Manguera</h5>
+                        <p class="card-text">$4990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/podadora.png"
+                             class="card-img-top img-fluid"
+                             alt="podadora">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Podadora</h5>
+                        <p class="card-text">$14990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/regadera.png"
+                             class="card-img-top img-fluid"
+                             alt="regadera">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Regadera verde</h5>
+                        <p class="card-text">$2990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/guantesDeJardineria.png"
+                             class="card-img-top img-fluid"
+                             alt="guantes">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Guantes para jardineria</h5>
+                        <p class="card-text">$2990</p>
+                        <div class="row">
+                            <button class="btn custom-btn">Añadir al carro</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid mt-4">
+            <div class="row pt-4 ps-4 pe-4 pb-4 footer align-items-end">
+                <div class="col-auto">
+                    <p>CONTACTO<br>
+                        Celular: +56945439506<br>
+                        Email: contacto@dedosverdes.cl<br>
+                        Direccion: Estación Chorrillos 1453, Viña del Mar, Valparaíso
+                    </p>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div class="row flex-column">
+                        <div class="col-auto mb-1 align-self-end">
+                            <a href="https://www.instagram.com/tu_usuario/" target="_blank" rel="noopener noreferrer">
+                                <button class="btn btn-lg btn-floating" style="background-color: #e967ca; font-size: 24px; color: #ffffff">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </button>
+                            </a>
+                                <a href="https://wa.me/+56977064643" target="_blank" rel="noopener noreferrer">
+                                    <button class="btn btn-lg btn-floating ms-1" style="background-color: #19dc08; font-size: 24px; color: #ffffff">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </button>
+                                </a>
+                        </div>
+                        <div class="col-auto">©2024 Dedos Verdes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>   <!--CDN BOOSTRAP-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  <!--CDN BOOSTRAP CARRUSEL-->
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            rewind: true,
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
