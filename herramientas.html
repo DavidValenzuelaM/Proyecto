@@ -45,135 +45,143 @@
                     </li>
                 </ul>                
             </div>
-            <div class="col-auto ms-auto">
-                <div class="row header-icons">
-                    <div class="col-auto"><i class="fa-solid fa-user"></i></div>
-                    <div class="col-auto"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()"><i class="fas fa-times"></i></span>
+                    <h2>Carrito</h2>
+                    <div id="cart-items"></div>
+                    <button onclick="clearCart()">Limpiar Carrito</button>
+                </div>
+            </div>
+            
+            <div id="view-cart">
+                <button onclick="showCart()"><i class="fas fa-shopping-cart"></i></button>
+            </div>
             </a>
         </div>
     </nav>
-<section>
-    <div class="container-fluid">
-        <div class="row mt-5">
-            <h1 class="text-center mt-5">Herramientas</h1>
-        </div>
-        <div class="row gx-0 gap-3 justify-content-center">
-            <div class="card product-card">
-                <div class="col-auto align-self-center">
-                    <img src="img/kitjardineria.jpg"
-                         class="card-img-top img-fluid"
-                         alt="jardineria">
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-4 mb-4">
+                <h1 class="text-center">Herramientas</h1>
+            </div>
+            <div class="row gx-0 gap-3 justify-content-center">
+                <div class="card product-card">
+                    <div class="col-auto align-self-center">
+                        <img src="img/kitjardineria.jpg"
+                             class="card-img-top img-fluid"
+                             alt="jardineria">
+                    </div>
+                    <div class="col-auto card-body">
+                        <h5 class="card-title">Kit jardineria</h5>
+                        <p class="card-text">$25.000</p>
+                        <div class="row">
+                            <button class="btn custom-btn" onclick="addToCart('kit jardineria', 25000)">Añadir al carro</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-auto card-body">
-                    <h5 class="card-title">Kit jardineria</h5>
-                    <p class="card-text">$25.000</p>
-                    <div class="row">
-                        <button class="btn custom-btn">Añadir al carro</button>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/manguera.png"
+                                 class="card-img-top img-fluid"
+                                 alt="manguera">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Manguera</h5>
+                            <p class="card-text">$4990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('Manguera', 4990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/podadora.png"
+                                 class="card-img-top img-fluid"
+                                 alt="podadora">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Podadora</h5>
+                            <p class="card-text">$14990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('Podadora', 14990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/regadera.png"
+                                 class="card-img-top img-fluid"
+                                 alt="regadera">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Regadera verde</h5>
+                            <p class="card-text">$2990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('regadera verde', 2990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/guantesDeJardineria.png"
+                                 class="card-img-top img-fluid"
+                                 alt="guantes">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Guantes para jardineria</h5>
+                            <p class="card-text">$2990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('guantes De Jardineria', 2990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/tijerasParaCortarArbustos.png"
+                                 class="card-img-top img-fluid"
+                                 alt="tijeras">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Tijeras Unix</h5>
+                            <p class="card-text">$3990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('tijeras Unix', 3990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/spray.png"
+                                 class="card-img-top img-fluid"
+                                 alt="spray">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Botella de spray</h5>
+                            <p class="card-text">$1990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('Botella de spray', 1990)">Añadir al carro</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card product-card">
+                        <div class="col-auto align-self-center">
+                            <img src="img/carretilla.png"
+                                 class="card-img-top img-fluid"
+                                 alt="carretilla">
+                        </div>
+                        <div class="col-auto card-body">
+                            <h5 class="card-title">Carretilla</h5>
+                            <p class="card-text">$3990</p>
+                            <div class="row">
+                                <button class="btn custom-btn" onclick="addToCart('carretilla', 3990)">Añadir al carro</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/manguera.png"
-                             class="card-img-top img-fluid"
-                             alt="manguera">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Manguera</h5>
-                        <p class="card-text">$4990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/podadora.png"
-                             class="card-img-top img-fluid"
-                             alt="podadora">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Podadora</h5>
-                        <p class="card-text">$14990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/regadera.png"
-                             class="card-img-top img-fluid"
-                             alt="regadera">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Regadera verde</h5>
-                        <p class="card-text">$2990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/guantesDeJardineria.png"
-                             class="card-img-top img-fluid"
-                             alt="guantes">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Guantes para jardineria</h5>
-                        <p class="card-text">$2990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/tijerasParaCortarArbustos.png"
-                             class="card-img-top img-fluid"
-                             alt="tijeras">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Tijeras Unix</h5>
-                        <p class="card-text">$3990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/spray.png"
-                             class="card-img-top img-fluid"
-                             alt="spray">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Botella de spray</h5>
-                        <p class="card-text">$1990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card product-card">
-                    <div class="col-auto align-self-center">
-                        <img src="img/carretilla.png"
-                             class="card-img-top img-fluid"
-                             alt="carretilla">
-                    </div>
-                    <div class="col-auto card-body">
-                        <h5 class="card-title">Carretilla</h5>
-                        <p class="card-text">$3990</p>
-                        <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</div>
-</div>
+    </div>
+    </div>
 </section>
 <footer>
     <div class="container-fluid mt-4">
@@ -212,6 +220,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>   <!--CDN BOOSTRAP-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  <!--CDN BOOSTRAP CARRUSEL-->
 <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&libraries=places"></script>
+<script src="js/script2.js"></script>
+<script src="js/script.js"></script>
 
 <script>
     var swiper = new Swiper(".mySwiper", {

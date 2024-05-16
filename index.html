@@ -45,10 +45,18 @@
                     </li>
                 </ul>                
             </div>
-            <div class="col-auto ms-auto">
-                <div class="row header-icons">
-                    <div class="col-auto"><i class="fa-solid fa-user"></i></div>
-                    <div class="col-auto"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()"><i class="fas fa-times"></i></span>
+                    <h2>Carrito</h2>
+                    <div id="cart-items"></div>
+                    <button onclick="clearCart()">Limpiar Carrito</button>
+                </div>
+            </div>
+            
+            <div id="view-cart">
+                <button onclick="showCart()"><i class="fas fa-shopping-cart"></i></button>
+            </div>
             </a>
         </div>
     </nav>
@@ -76,10 +84,12 @@
         </div>
     </section>
     <section>
+     
         <div class="container-fluid">
             <div class="row mt-4 mb-4">
                 <h1 class="text-center">Destacados</h1>
             </div>
+
             <div class="row gx-0 gap-3 justify-content-center">                    <!--CARD-->
                 <div class="card product-card">
                     <div class="col-auto align-self-center">
@@ -91,7 +101,7 @@
                         <h5 class="card-title">Maceta Verde Pequeña</h5>
                         <p class="card-text">$1990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Maceta Verde Pequeña', 1990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -105,7 +115,7 @@
                         <h5 class="card-title">Tijeras Unix</h5>
                         <p class="card-text">$3990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Tijeras Unix', 3990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -119,7 +129,7 @@
                         <h5 class="card-title">Botella de spray</h5>
                         <p class="card-text">$1990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Botella de spray', 1990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +143,7 @@
                         <h5 class="card-title">Carretilla</h5>
                         <p class="card-text">$3990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Carretilla', 3990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -156,7 +166,7 @@
                         <h5 class="card-title">Manguera</h5>
                         <p class="card-text">$4990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Manguera', 4990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -170,7 +180,7 @@
                         <h5 class="card-title">Podadora</h5>
                         <p class="card-text">$14990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Podadora', 14990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -184,7 +194,7 @@
                         <h5 class="card-title">Regadera verde</h5>
                         <p class="card-text">$2990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Regadera verde', 2990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -198,7 +208,7 @@
                         <h5 class="card-title">Guantes para jardineria</h5>
                         <p class="card-text">$2990</p>
                         <div class="row">
-                            <button class="btn custom-btn">Añadir al carro</button>
+                            <button class="btn custom-btn" onclick="addToCart('Guantes para jardineria', 2990)">Añadir al carro</button>
                         </div>
                     </div>
                 </div>
@@ -242,6 +252,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>   <!--CDN BOOSTRAP-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  <!--CDN BOOSTRAP CARRUSEL-->
     <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&libraries=places"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/script.js"></script>
+    
+    
 
     <script>
         var swiper = new Swiper(".mySwiper", {

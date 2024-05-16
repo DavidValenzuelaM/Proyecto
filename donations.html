@@ -46,10 +46,18 @@
                         </li>
                     </ul>                
                 </div>
-                <div class="col-auto ms-auto">
-                    <div class="row header-icons">
-                        <div class="col-auto"><i class="fa-solid fa-user"></i></div>
-                        <div class="col-auto"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()"><i class="fas fa-times"></i></span>
+                        <h2>Carrito</h2>
+                        <div id="cart-items"></div>
+                        <button onclick="clearCart()">Limpiar Carrito</button>
+                    </div>
+                </div>
+                
+                <div id="view-cart">
+                    <button onclick="showCart()"><i class="fas fa-shopping-cart"></i></button>
+                </div>
                 </a>
             </div>
         </nav>
@@ -188,6 +196,8 @@
         <script src="js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_API&libraries=places"></script>
+        <script src="js/script2.js"></script>
+        <script src="js/script.js"></script>
         
     
         <script>
