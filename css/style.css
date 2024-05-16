@@ -7,7 +7,55 @@
 .valid-feedback {
     font-size: 12px;
 }
-
+/* Estilos básicos del navbar */
+.navbar {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: #8fe496; /* Cambia el color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    position: fixed; /* Navegación fija */
+    top: 0; /* Navegación fija */
+    z-index: 100; /* Navegación fija - Asegúrate de que la barra esté encima */
+    font-family: "Jaini Purva", system-ui;
+    letter-spacing: 4.0px;
+    
+}
+  
+  
+  /* Enlaces de navegación centrados */
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+  }
+  
+  /* Estilos de enlaces de navegación */
+  .nav-link {
+    text-decoration: none;
+    color: #000; /* Cambia el color del enlace */
+    padding: 1rem; /* Ajusta el padding si es necesario */
+    font-weight: bold; /* Opcional: negrita */
+  }
+  
+  /* Estilos de enlace de navegación activo */
+  .nav-link.active {
+    color: #333; /* Cambia el color del enlace activo */
+  }
+  
+  /* Estilos de marca del navbar */
+  .navbar-brand {
+    margin-left: 1rem; /* Ajusta el margen si es necesario */
+  }
+  
+  /* Elimina cualquier estilo predeterminado de la etiqueta ancla */
+  .navbar-brand a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del enlace de navbar-brand */
+  }
+  
+  /* Opcional: Agrega efectos hover para los enlaces */
+  .nav-link:hover {
+    color: #1e9c04; /* Cambia el color al pasar el mouse */
+  }  
 .custom-input:focus ~ .form-notch div {
     border-color: #8dc197 !important;
 }
@@ -40,7 +88,7 @@
 }
 
 .custom-select.is-invalid:focus {
-    border-color: #f93154;
+    border-color: #f0e0e3;
     box-shadow: inset 0 0 0 1px #f93154;
 }
 
@@ -54,7 +102,7 @@
 
 .header {
     height: 100px;
-    background: #ffffff;
+    background: #cc3434;
 }
 
 .header img {
@@ -67,7 +115,7 @@
 }
 
 .categories-bar {
-    background: rgb(161, 227, 186);
+    background: rgb(114, 241, 109);
     line-height: 50px;
 }
 
@@ -82,23 +130,25 @@
 }
 
 .footer {
-    background: #ffffff;
+    background: #76e692;
     font-weight: 500;
     color: #000000;
 }
 
-h1 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #000000;
-}
+h1{
+    font-size: 70px;
+    font-family: "Jaini Purva", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
 
 p {
     margin: 0;
+    font-family: "Oswald", sans-serif;
 }
-
+  
 .home .carousel {
-    aspect-ratio: 3.5 / 1;
+    aspect-ratio: 2.5 / 1;
 }
 
 .home .carousel img {
@@ -156,11 +206,25 @@ p {
     object-fit: cover;
 }
 
-.
+
+
+.navbar-brand img {
+    max-height: 50px; 
+}
+
+
+.navbar-center-space {
+    flex-grow: 1;
+}
+
+
+
+
+
 
 @media (max-width: 767.98px) {
     .categories-bar .block {
-        border-bottom: 1px solid #95cb9f;
+        border-bottom: 1px solid #cbe4e7;
     }
 
     .carousel {
