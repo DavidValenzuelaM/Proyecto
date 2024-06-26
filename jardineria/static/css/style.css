@@ -1,0 +1,279 @@
+.home {
+    font-family: 'Noto Sans', sans-serif;
+    background: rgba(28, 147, 74, 0.15);
+}
+
+.invalid-feedback,
+.valid-feedback {
+    font-size: 12px;
+}
+/* Estilos básicos del navbar */
+.navbar {
+    width: 100%; /* Ajusta el ancho si es necesario */
+    background-color: #8fe496; /* Cambia el color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    position: fixed; /* Navegación fija */
+    top: 0; /* Navegación fija */
+    z-index: 100; /* Navegación fija - Asegúrate de que la barra esté encima */
+    font-family: "Jaini Purva", system-ui;
+    letter-spacing: 4.0px;
+    
+}
+  
+  
+  /* Enlaces de navegación centrados */
+  .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    align-items: center; /* Centra los enlaces verticalmente */
+  }
+  
+  /* Estilos de enlaces de navegación */
+  .nav-link {
+    text-decoration: none;
+    color: #000; /* Cambia el color del enlace */
+    padding: 1rem; /* Ajusta el padding si es necesario */
+    font-weight: bold; /* Opcional: negrita */
+  }
+  
+  /* Estilos de enlace de navegación activo */
+  .nav-link.active {
+    color: #333; /* Cambia el color del enlace activo */
+  }
+  
+  /* Estilos de marca del navbar */
+  .navbar-brand {
+    margin-left: 1rem; /* Ajusta el margen si es necesario */
+  }
+  
+  /* Elimina cualquier estilo predeterminado de la etiqueta ancla */
+  .navbar-brand a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del enlace de navbar-brand */
+  }
+  
+  /* Opcional: Agrega efectos hover para los enlaces */
+  .nav-link:hover {
+    color: #1e9c04; /* Cambia el color al pasar el mouse */
+  }  
+.custom-input:focus ~ .form-notch div {
+    border-color: #8dc197 !important;
+}
+
+.custom-input:focus ~ .form-label {
+    color: #8dc197 !important;
+}
+
+.custom-input.is-invalid:focus ~ .form-notch div {
+    border-color: #f93154 !important;
+}
+
+.custom-input.is-invalid:focus ~ .form-label {
+    color: #f93154 !important;
+}
+
+.custom-select:focus {
+    border-color: #8dc197;
+    box-shadow: inset 0 0 0 1px #8dc197;
+}
+
+.custom-select.is-invalid {
+    margin-bottom: 1rem;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%234f4f4f' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3E%3C/svg%3E") !important;
+    padding-right: 2.25rem !important;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    color: #f93154;
+}
+
+.custom-select.is-invalid:focus {
+    border-color: #f0e0e3;
+    box-shadow: inset 0 0 0 1px #f93154;
+}
+
+.custom-select.is-invalid option {
+    color: #4f4f4f;
+}
+
+.custom-select.is-invalid + .invalid-feedback {
+    margin-top: -.75rem;
+}
+
+.header {
+    height: 100px;
+    background: #cc3434;
+}
+
+.header img {
+    max-height: 75px;
+}
+
+.header .header-icons {
+    font-size: 50px;
+    color: #000000;
+}
+
+.categories-bar {
+    background: rgb(114, 241, 109);
+    line-height: 50px;
+}
+
+.categories-bar a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.categories-bar a:hover {
+    color: #212121;
+}
+
+.footer {
+    background: #76e692;
+    font-weight: 500;
+    color: #000000;
+}
+
+h1{
+    font-size: 70px;
+    font-family: "Jaini Purva", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+p {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+  
+.home .carousel {
+    aspect-ratio: 2.5 / 1;
+}
+
+.home .carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .carousel .swiper-button-next,
+.home .carousel .swiper-button-prev {
+    color: #ffffff;
+}
+
+.home .product-card {
+    max-width: 275px;
+    margin: 0 1vw 0 1vw;
+    color: #000000;
+}
+
+.home .product-card img {
+    aspect-ratio: 1/1;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 1vh;     
+}
+
+.custom-btn {
+    width: 100%;
+    background-color: #8dc197;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.page-wrapper {
+    height: 100vh;
+}
+
+.donations {
+    font-family: 'Noto Sans', sans-serif;
+    background: rgba(28, 147, 74, 0.15);
+}
+
+.donations .form-box {
+    max-width: 600px;
+}
+
+.donations .form-check-input[type='checkbox']:checked {
+    background-color: #8dc197;
+    border-color: #8dc197;
+}
+
+.donations .form-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.navbar-brand img {
+    max-height: 50px; 
+}
+
+
+.navbar-center-space {
+    flex-grow: 1;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Fondo oscuro semitransparente */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Botón para cerrar el modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+    .categories-bar .block {
+        border-bottom: 1px solid #cbe4e7;
+    }
+
+    .carousel {
+        aspect-ratio: 1.5 / 1;
+    }
+
+    .header {
+        height: 80px;
+    }
+
+    .header .header-icons {
+        font-size: 25px;
+        color: #000000;
+    }
+}
